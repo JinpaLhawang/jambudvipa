@@ -21,3 +21,4 @@
 * get hello-world-ui working
 * increase management of configs; add endpoint to serve list of loaded configs.
 * configure eureka /info endpoint configuration
+* account-edge discovery client

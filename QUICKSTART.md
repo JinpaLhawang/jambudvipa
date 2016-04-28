@@ -9,7 +9,7 @@ cd ~/Development/jambudvipa/discovery
 mvn package && mvn spring-boot:run
 ```
 
-[http://localhost:8761/](http://localhost:8761)
+* [Discovery Management](http://localhost:8761)
 
 ### configuration
 
@@ -18,9 +18,10 @@ cd ~/Development/jambudvipa/configuration
 mvn package && mvn -DCONFIG_URI=file:/Users/nicholaseden-walker/Development/jambudvipa/properties spring-boot:run
 ```
 
-http://localhost:8888/configuration/master
-http://localhost:8888/account-middle/master
-http://localhost:8888/hello-world-middle/master
+Configuration for:
+* [configuration](http://localhost:8888/configuration/master)
+* [account-middle](http://localhost:8888/account-middle/master)
+* [hello-world-middle](http://localhost:8888/hello-world-middle/master)
 
 ### account-middle
 
@@ -30,10 +31,9 @@ cd ~/Development/jambudvipa/account-middle
 mvn package && mvn spring-boot:run
 ```
 
-http://localhost:8090/accounts/search/findByFirstName?firstName=Jinpa
-http://localhost:8090/accounts/search/findByLastName?lastName=Lhawang
-
-http://localhost:8090/service-instances/account-middle
+* [Find by First Name](http://localhost:8090/accounts/search/findByFirstName?firstName=Jinpa)
+* [Find by Last Name](http://localhost:8090/accounts/search/findByLastName?lastName=Lhawang)
+* [Discovery for account-middle](http://localhost:8090/service-instances/account-middle)
 
 ### hello-world-middle
 
@@ -42,8 +42,8 @@ cd ~/Development/jambudvipa/hello-world-middle
 mvn package && mvn spring-boot:run
 ```
 
-http://localhost:8091
-http://localhost:8091/service-instances/hello-world-middle
+* [Hello Jinpa Lhawang!](http://localhost:8091)
+* [Discovery for hello-world-middle](http://localhost:8091/service-instances/hello-world-middle)
 
 ### account-edge
 
@@ -52,4 +52,4 @@ cd ~/Development/jambudvipa/account-edge
 mvn package && mvn spring-boot:run
 ```
 
-http://localhost:8080
+* [From Middle: Hello Jinpa Lhawang!](http://localhost:8080)
