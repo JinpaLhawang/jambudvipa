@@ -19,7 +19,6 @@ mvn package && mvn -DCONFIG_URI=file:/Users/nicholaseden-walker/Development/jamb
 ```
 
 Configuration for:
-* [configuration](http://localhost:8888/configuration/master)
 * [account-middle](http://localhost:8888/account-middle/master)
 * [hello-world-middle](http://localhost:8888/hello-world-middle/master)
 
