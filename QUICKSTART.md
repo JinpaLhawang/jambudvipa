@@ -9,7 +9,7 @@ cd ~/Development/jambudvipa/discovery
 mvn package && mvn spring-boot:run
 ```
 
-http://localhost:8761/
+[http://localhost:8761/](http://localhost:8761)
 
 ### configuration
 
