@@ -6,7 +6,6 @@
 
 * discovery
 * configuration
-* mongodb
 * account-middle
 * hello-world-middle
 * account-edge
