@@ -7,8 +7,9 @@
 * discovery
 * configuration
 * account-middle
-* hello-world-middle
 * account-edge
+* hello-world-middle
+* hello-world-edge
 
 ### Inactive
 
@@ -17,8 +18,9 @@
 ## TODO
 
 * mock services in tests
-* create hello-world-edge
 * get hello-world-ui working
 * increase management of configs; add endpoint to serve list of loaded configs.
 * configure eureka /info endpoint configuration
-* account-edge discovery client
+* wire up ribbon calls to get other service uris
+* Add Hystrix to other apps
+* Create Turbine Dashboard?
