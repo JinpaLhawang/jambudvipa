@@ -24,3 +24,6 @@
 * wire up ribbon calls to get other service uris
 * Add Hystrix to other apps
 * Create Turbine Dashboard?
+* rework middle/edge responses
+* * hello-world-middle returns message object with World replaced with Account Name
+* * hello-world-edge returns message object

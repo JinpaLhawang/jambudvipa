@@ -52,7 +52,7 @@ cd ~/Development/jambudvipa/account-edge
 mvn package && mvn spring-boot:run -q
 ```
 
-* [From Middle: Hello Jinpa Lhawang!](http://localhost:8091)
+* [Account](http://localhost:8091)
 
 ### hello-world-edge
 
