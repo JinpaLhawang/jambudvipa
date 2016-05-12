@@ -6,7 +6,7 @@
 
 ```
 cd ~/Development/jambudvipa/discovery
-mvn package && mvn spring-boot:run -q
+mvn package && mvn spring-boot:run
 ```
 
 * [Discovery Management](http://localhost:8761)
@@ -18,7 +18,7 @@ mvn package && mvn spring-boot:run -q
 
 ```
 cd ~/Development/jambudvipa/configuration
-mvn package && mvn -DCONFIG_URI=file:/Users/nicholaseden-walker/Development/jambudvipa/properties spring-boot:run -q
+mvn package && mvn -DCONFIG_URI=file:/Users/nicholaseden-walker/Development/jambudvipa/properties spring-boot:run
 ```
 
 * [Configuration for account-middle](http://localhost:8888/account-middle/master)
@@ -30,7 +30,7 @@ mvn package && mvn -DCONFIG_URI=file:/Users/nicholaseden-walker/Development/jamb
 ```
 mongod --dbpath ~/mongodb/data/db/
 cd ~/Development/jambudvipa/account-middle
-mvn package && mvn spring-boot:run -q
+mvn package && mvn spring-boot:run
 ```
 
 * [Find by First Name](http://localhost:8090/accounts/search/findByFirstName?firstName=Jinpa)
@@ -40,7 +40,7 @@ mvn package && mvn spring-boot:run -q
 
 ```
 cd ~/Development/jambudvipa/hello-world-middle
-mvn package && mvn spring-boot:run -q
+mvn package && mvn spring-boot:run
 ```
 
 * [Hello Jinpa Lhawang!](http://localhost:8092)
@@ -49,7 +49,7 @@ mvn package && mvn spring-boot:run -q
 
 ```
 cd ~/Development/jambudvipa/account-edge
-mvn package && mvn spring-boot:run -q
+mvn package && mvn spring-boot:run
 ```
 
 * [Account](http://localhost:8091)
@@ -58,7 +58,24 @@ mvn package && mvn spring-boot:run -q
 
 ```
 cd ~/Development/jambudvipa/hello-world-edge
-mvn package && mvn spring-boot:run -q
+mvn package && mvn spring-boot:run
 ```
 
 * [From Middle: Hello Jinpa Lhawang!](http://localhost:8093)
+
+### google-calendar-middle
+
+```
+cd ~/Development/jambudvipa/google-calendar-middle
+mvn package && mvn spring-boot:run
+```
+
+* [Show Calendars](http://localhost:8095/calendar/list)
+
+* [Add Calendars using Batch](http://localhost:8095/calendar/batch/add)
+* [Add Calendar](http://localhost:8095/calendar/add)
+* [Update Calendar](http://localhost:8095/calendar/{calendarId}/update)
+* [Add Event](http://localhost:8095/calendar/{calendarId}/add)
+* [Show Events](http://localhost:8095/calendar/{calendarId}/events/list)
+* [Delete Calendars using Batch](http://localhost:8095/calendar/batch/delete)
+* [Delete Calendar](http://localhost:8095/calendar/{calendarId}/delete)
